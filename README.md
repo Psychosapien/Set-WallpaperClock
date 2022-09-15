@@ -2,7 +2,7 @@
 
 This Powershell Module is designed to replace the current wallpaper with a randomly generated one. The generated wallpaper displays the time, along with a few other bits if you would like it to.
 
-The package can be found on the gallery [here]()
+The package can be found on the gallery [here](https://www.powershellgallery.com/packages/Set-WallpaperClock)
 
 ## General Use
 
