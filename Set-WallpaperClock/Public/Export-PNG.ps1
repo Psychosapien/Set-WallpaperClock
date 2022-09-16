@@ -52,7 +52,7 @@ function Export-Png {
         Add-Type -AssemblyName System.Windows.Forms
 
         $display =  [System.Windows.Forms.Screen]::AllScreens
-        $BmpImage = [Bitmap]::new($display.bounds.size.width, $display.bounds.size.height)
+        $BmpImage = [Bitmap]::new($display[0].bounds.size.width, $display[0].bounds.size.height)
         $Graphics = [Graphics]::FromImage($BmpImage)
 
 

@@ -123,7 +123,7 @@ function Set-WallpaperClock {
             $(if ($ADO) {
                 "You currently have $(($ADO).count) tickets in DevOps...`n"
 
-                $(if(($ADO).count -lt 20) {
+                $(if(($ADO).count -lt 18) {
                     Foreach ($item in $ADO) {
                     "`t`t#";$item; "-"
                             $UriOrga = "https://dev.azure.com/$($Creds.OrganizationName)/$($Creds.projectName)/_apis/wit/workitems/$($item)?api-version=6.0"
@@ -169,7 +169,7 @@ function Set-WallpaperClock {
             $(if ($ADO) {
                 "You currently have $(($ADO).count) $(Get-Plural (Get-word Swear)) in DevOps...`n"
 
-                $(if(($ADO).count -lt 20) {
+                $(if(($ADO).count -lt 18) {
                 Foreach ($item in $ADO) {
                 "`t`t#";$item; "-"
                         $UriOrga = "https://dev.azure.com/$($Creds.OrganizationName)/$($Creds.projectName)/_apis/wit/workitems/$($item)?api-version=6.0"
